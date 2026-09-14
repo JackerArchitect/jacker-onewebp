@@ -210,7 +210,7 @@ Jacker OneWebP is built with passion. If you find this plugin useful, consider s
 | Channel | Contact |
 |---------|---------|
 | **Email** | [support@jackerteo.com](mailto:support@jackerteo.com) |
-| **Website** | [jackerteo.com/plugin/onewebp](https://jackerteo.com/plugin/onewebp) |
+| **Website** | [jackerteo.com/plugin/jacker-onewebp](https://jackerteo.com/plugin/jacker-onewebp) |
 | **GitHub Issues** | [Create an issue](https://github.com/JackerArchitect/jacker-onewebp/issues) |
 
 ### Buy Me a Coffee
