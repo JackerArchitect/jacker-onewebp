@@ -1,0 +1,789 @@
+/**
+ * OneWebP admin styles.
+ *
+ * @package OneWebP
+ */
+
+/* -------------------------------------------------------------------------
+ * Report grid
+ * ---------------------------------------------------------------------- */
+.onewebp-report-grid {
+	display: flex;
+	gap: 15px;
+	margin: 20px 0;
+	flex-wrap: wrap;
+}
+
+.onewebp-report-box {
+	flex: 1;
+	min-width: 140px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px 10px;
+	text-align: center;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+
+.onewebp-report-num {
+	display: block;
+	font-size: 32px;
+	font-weight: bold;
+	color: #1d2327;
+	line-height: 1.2;
+	margin-bottom: 5px;
+}
+
+.onewebp-report-label {
+	display: block;
+	font-size: 12px;
+	color: #646970;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-weight: 600;
+}
+
+.onewebp-stat-converted {
+	color: #008080;
+}
+
+.onewebp-stat-native {
+	color: #1e7e34;
+}
+
+.onewebp-stat-pending {
+	color: #dba617;
+}
+
+.onewebp-stat-failed {
+	color: #d63638;
+}
+
+/* -------------------------------------------------------------------------
+ * Progress bar
+ * ---------------------------------------------------------------------- */
+.onewebp-progress-container {
+	background: #f0f0f1;
+	border-radius: 4px;
+	height: 30px;
+	margin: 20px 0;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #c3c4c7;
+}
+
+.onewebp-progress-fill {
+	background: #0073aa;
+	height: 100%;
+	width: 0%;
+	transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.onewebp-progress-fill.completed {
+	background: #008080 !important;
+}
+
+.onewebp-progress-text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 0;
+	line-height: 30px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #1d2327;
+	transition: color 0.3s ease;
+}
+
+.onewebp-progress-text.completed {
+	color: #fff !important;
+}
+
+/* -------------------------------------------------------------------------
+ * Cards
+ * ---------------------------------------------------------------------- */
+.onewebp-card {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	padding: 20px;
+	margin: 20px 0;
+}
+
+.onewebp-saved-space-box {
+	background: #f6f7f7;
+	padding: 15px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+}
+
+.onewebp-saved-space-text {
+	margin: 0;
+	font-size: 15px;
+}
+
+.onewebp-saved-space-value {
+	color: #008080;
+	font-size: 18px;
+	margin-left: 5px;
+}
+
+/* -------------------------------------------------------------------------
+ * Footer
+ * ---------------------------------------------------------------------- */
+.onewebp-footer {
+	margin-top: 40px;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-left: 4px solid #0073aa;
+	text-align: center;
+	border-radius: 4px;
+}
+
+.onewebp-footer-text {
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	color: #50575e;
+}
+
+.onewebp-coffee-btn {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 6px 12px;
+	background: #ff8c00;
+	color: #fff !important;
+	border-radius: 3px;
+	text-decoration: none !important;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.onewebp-coffee-btn:hover {
+	background: #e67e00;
+	color: #fff !important;
+}
+
+/* -------------------------------------------------------------------------
+ * Settings page intro
+ * ---------------------------------------------------------------------- */
+.onewebp-settings-intro {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-left: 4px solid #0073aa;
+	border-radius: 4px;
+	padding: 15px 20px;
+	margin: 20px 0;
+}
+
+.onewebp-settings-intro h2 {
+	margin: 0 0 8px 0;
+	font-size: 16px;
+	color: #1d2327;
+}
+
+.onewebp-settings-intro p {
+	margin: 0;
+	color: #50575e;
+	font-size: 13px;
+}
+
+/* -------------------------------------------------------------------------
+ * Settings section headings
+ * ---------------------------------------------------------------------- */
+.onewebp-settings-section {
+	margin: 30px 0 10px 0;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #dcdcde;
+	font-size: 15px;
+	color: #1d2327;
+}
+
+/* -------------------------------------------------------------------------
+ * Settings notes and info boxes
+ * ---------------------------------------------------------------------- */
+.onewebp-settings-note {
+	padding: 10px 15px;
+	background: #f0f6fc;
+	border-left: 4px solid #0073aa;
+	margin: 10px 0;
+	border-radius: 3px;
+}
+
+.onewebp-settings-note p {
+	margin: 0 0 6px 0;
+	font-size: 13px;
+	color: #1d2327;
+}
+
+.onewebp-settings-note p:last-child {
+	margin-bottom: 0;
+}
+
+.onewebp-settings-note ul {
+	margin: 6px 0 0 20px;
+	list-style: disc;
+	font-size: 13px;
+	color: #50575e;
+}
+
+/* -------------------------------------------------------------------------
+ * Picture wrapper note
+ * ---------------------------------------------------------------------- */
+.onewebp-picture-note {
+	margin-top: 12px;
+	padding: 12px 16px;
+	background: #f0f6fc;
+	border-left: 4px solid #2271b1;
+	border-radius: 3px;
+}
+
+.onewebp-picture-note p {
+	margin: 0 0 6px 0;
+	font-weight: 600;
+	color: #1d2327;
+	font-size: 13px;
+}
+
+.onewebp-picture-details {
+	margin-top: 8px;
+	padding: 10px 14px;
+	background: #f6f7f7;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #646970;
+}
+
+.onewebp-picture-details ul {
+	margin: 6px 0 0 20px;
+	list-style: disc;
+}
+
+.onewebp-picture-warning {
+	margin-top: 8px;
+	padding: 10px 14px;
+	background: #fcf0f1;
+	border-left: 4px solid #d63638;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #50575e;
+}
+
+.onewebp-picture-warning strong {
+	color: #d63638;
+}
+
+/* -------------------------------------------------------------------------
+ * Progressive loading note
+ * ---------------------------------------------------------------------- */
+.onewebp-progressive-note {
+	margin-top: 12px;
+	padding: 12px 16px;
+	background: #f0f6fc;
+	border-left: 4px solid #2271b1;
+	border-radius: 3px;
+}
+
+.onewebp-progressive-note p {
+	margin: 0 0 6px 0;
+	font-weight: 600;
+	color: #1d2327;
+	font-size: 13px;
+}
+
+.onewebp-progressive-details {
+	margin-top: 8px;
+	padding: 10px 14px;
+	background: #f6f7f7;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #646970;
+}
+
+.onewebp-progressive-details ul {
+	margin: 6px 0 0 20px;
+	list-style: disc;
+}
+
+.onewebp-progressive-note-warning {
+	margin-top: 8px;
+	padding: 10px 14px;
+	background: #fff8e5;
+	border-left: 4px solid #f5a623;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #50575e;
+}
+
+/* -------------------------------------------------------------------------
+ * Lazy load note
+ * ---------------------------------------------------------------------- */
+.onewebp-lazy-note {
+	margin-top: 12px;
+	padding: 12px 16px;
+	background: #f0f6fc;
+	border-left: 4px solid #2271b1;
+	border-radius: 3px;
+}
+
+.onewebp-lazy-note p {
+	margin: 0 0 6px 0;
+	font-weight: 600;
+	color: #1d2327;
+	font-size: 13px;
+}
+
+.onewebp-lazy-details {
+	margin-top: 8px;
+	padding: 10px 14px;
+	background: #f6f7f7;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #646970;
+}
+
+.onewebp-lazy-details ul {
+	margin: 6px 0 0 20px;
+	list-style: disc;
+}
+
+/* -------------------------------------------------------------------------
+ * External images note
+ * ---------------------------------------------------------------------- */
+.onewebp-external-note {
+	margin-top: 12px;
+	padding: 12px 16px;
+	background: #f0f6fc;
+	border-left: 4px solid #2271b1;
+	border-radius: 3px;
+}
+
+.onewebp-external-note p {
+	margin: 0 0 6px 0;
+	font-weight: 600;
+	color: #1d2327;
+	font-size: 13px;
+}
+
+.onewebp-external-warning {
+	margin-top: 8px;
+	padding: 10px 14px;
+	background: #fff8e5;
+	border-left: 4px solid #f5a623;
+	border-radius: 3px;
+	font-size: 13px;
+	color: #50575e;
+}
+
+/* -------------------------------------------------------------------------
+ * Deletion mode options
+ * ---------------------------------------------------------------------- */
+.onewebp-deletion-option {
+	display: block;
+	padding: 12px 15px;
+	margin-bottom: 10px;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	cursor: pointer;
+	background: #fff;
+}
+
+.onewebp-deletion-option:hover {
+	background: #f0f0f1;
+}
+
+.onewebp-deletion-option.selected {
+	border-color: #2271b1;
+	background: #f0f9ff;
+}
+
+.onewebp-deletion-option-danger {
+	border-color: #d63638;
+}
+
+.onewebp-deletion-option input[type="radio"] {
+	margin-right: 10px;
+}
+
+.onewebp-deletion-option .option-title {
+	font-weight: 600;
+	display: block;
+	color: #1d2327;
+}
+
+.onewebp-option-title-danger {
+	color: #d63638;
+}
+
+.onewebp-deletion-option .option-desc {
+	font-size: 13px;
+	color: #646970;
+	margin-top: 4px;
+	display: block;
+	margin-left: 26px;
+}
+
+/* -------------------------------------------------------------------------
+ * Deletion mode comparison table
+ * ---------------------------------------------------------------------- */
+.onewebp-mode-comparison {
+	margin-top: 16px;
+	padding: 16px;
+	background: #f6f7f7;
+	border-radius: 4px;
+	border: 1px solid #c3c4c7;
+	overflow-x: auto;
+}
+
+.onewebp-mode-comparison h3 {
+	margin: 0 0 10px 0;
+	font-size: 14px;
+	color: #1d2327;
+}
+
+.onewebp-mode-comparison table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 12px;
+}
+
+.onewebp-mode-comparison th {
+	padding: 8px 10px;
+	text-align: left;
+	border-bottom: 1px solid #c3c4c7;
+	background: #e2e4e7;
+	color: #1d2327;
+	font-weight: 600;
+}
+
+.onewebp-mode-comparison td {
+	padding: 6px 10px;
+	border-bottom: 1px solid #e2e4e7;
+	color: #50575e;
+}
+
+.onewebp-mode-comparison .sync-color {
+	color: #008080;
+	font-weight: 600;
+}
+
+.onewebp-mode-comparison .keep-color {
+	color: #dba617;
+	font-weight: 600;
+}
+
+.onewebp-mode-comparison .delete-color {
+	color: #d63638;
+	font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------
+ * Replace option (sub-option under deletion modes)
+ * ---------------------------------------------------------------------- */
+.onewebp-replace-option {
+	display: block;
+	margin-top: 12px;
+	margin-left: 26px;
+	padding: 10px 14px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	font-size: 13px;
+	color: #1d2327;
+	cursor: pointer;
+}
+
+.onewebp-replace-option:hover {
+	background: #f6f7f7;
+}
+
+.onewebp-replace-option input {
+	margin-right: 6px;
+}
+
+.onewebp-replace-desc {
+	color: #646970;
+	font-size: 12px;
+	display: block;
+	margin-top: 4px;
+	margin-left: 26px;
+}
+
+/* -------------------------------------------------------------------------
+ * Reset progress
+ * ---------------------------------------------------------------------- */
+.onewebp-reset-settings-form {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.onewebp-reset-progress {
+	margin-top: 15px;
+	padding: 15px;
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	display: none;
+}
+
+.onewebp-reset-progress p {
+	margin: 0 0 10px 0;
+	font-weight: 600;
+	color: #1d2327;
+}
+
+.onewebp-reset-progress .bar {
+	background: #f0f0f1;
+	border-radius: 4px;
+	height: 30px;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #c3c4c7;
+}
+
+.onewebp-reset-progress .bar .fill {
+	background: #0073aa;
+	height: 100%;
+	width: 0%;
+	transition: width 0.3s ease;
+}
+
+.onewebp-reset-progress .bar .text {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 0;
+	line-height: 30px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #1d2327;
+}
+
+.onewebp-reset-progress .status {
+	margin: 10px 0 0 0;
+	font-size: 13px;
+	color: #646970;
+}
+
+/* -------------------------------------------------------------------------
+ * Edit card
+ * ---------------------------------------------------------------------- */
+.onewebp-edit-card {
+	max-width: 600px;
+}
+
+.onewebp-edit-preview {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
+}
+
+/* -------------------------------------------------------------------------
+ * Mode notice
+ * ---------------------------------------------------------------------- */
+.onewebp-mode-notice-hint {
+	font-size: 12px;
+	color: #646970;
+}
+
+/* -------------------------------------------------------------------------
+ * Utility classes
+ * ---------------------------------------------------------------------- */
+.onewebp-hidden {
+	display: none;
+}
+
+.onewebp-ml-10 {
+	margin-left: 10px;
+}
+
+/* -------------------------------------------------------------------------
+ * Image Manager: fixed column widths, non-stretching thumbnails.
+ * ---------------------------------------------------------------------- */
+.onewebp-content .wp-list-table {
+	table-layout: fixed !important;
+}
+
+.onewebp-content .wp-list-table th.column-preview,
+.onewebp-content .wp-list-table td.column-preview,
+.wp-list-table th.column-preview,
+.wp-list-table td.column-preview {
+	width: 100px !important;
+	max-width: 100px !important;
+	min-width: 100px !important;
+	text-align: center !important;
+	vertical-align: middle !important;
+	overflow: hidden !important;
+	padding: 8px !important;
+}
+
+.onewebp-content .wp-list-table th.column-cb,
+.onewebp-content .wp-list-table td.column-cb,
+.wp-list-table th.column-cb,
+.wp-list-table td.column-cb,
+.onewebp-content .wp-list-table th.check-column,
+.onewebp-content .wp-list-table td.check-column,
+.wp-list-table th.check-column,
+.wp-list-table td.check-column {
+	width: 2.2em !important;
+	max-width: 2.2em !important;
+}
+
+.onewebp-content .wp-list-table th.column-size_name,
+.onewebp-content .wp-list-table td.column-size_name,
+.wp-list-table th.column-size_name,
+.wp-list-table td.column-size_name {
+	width: 200px !important;
+}
+
+.onewebp-content .wp-list-table th.column-original_size,
+.onewebp-content .wp-list-table td.column-original_size,
+.wp-list-table th.column-original_size,
+.wp-list-table td.column-original_size {
+	width: 120px !important;
+}
+
+.onewebp-content .wp-list-table th.column-webp_size,
+.onewebp-content .wp-list-table td.column-webp_size,
+.wp-list-table th.column-webp_size,
+.wp-list-table td.column-webp_size {
+	width: 180px !important;
+}
+
+.onewebp-content .wp-list-table th.column-actions,
+.onewebp-content .wp-list-table td.column-actions,
+.wp-list-table th.column-actions,
+.wp-list-table td.column-actions {
+	width: 200px !important;
+}
+
+.onewebp-content .wp-list-table td,
+.wp-list-table td {
+	vertical-align: middle !important;
+	padding: 12px 8px !important;
+}
+
+.onewebp-preview-wrap {
+	display: inline-flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	width: 80px !important;
+	height: 80px !important;
+	min-width: 80px !important;
+	min-height: 80px !important;
+	max-width: 80px !important;
+	max-height: 80px !important;
+	overflow: hidden !important;
+	line-height: 0 !important;
+	vertical-align: middle !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	float: none !important;
+	box-sizing: border-box !important;
+	background: #f6f7f7 !important;
+	border: 1px solid #ddd !important;
+	border-radius: 3px !important;
+}
+
+.onewebp-preview-wrap img,
+.onewebp-manager-thumb,
+.wp-list-table td.column-preview img {
+	width: auto !important;
+	height: auto !important;
+	max-width: 100% !important;
+	max-height: 100% !important;
+	min-width: 0 !important;
+	min-height: 0 !important;
+	object-fit: contain !important;
+	display: block !important;
+	margin: 0 !important;
+	padding: 0 !important;
+	border: 0 !important;
+	float: none !important;
+	box-sizing: border-box !important;
+}
+
+/* -------------------------------------------------------------------------
+ * Manager text styles
+ * ---------------------------------------------------------------------- */
+.onewebp-file-link {
+	color: #2271b1;
+	text-decoration: none;
+}
+
+.onewebp-size-label {
+	color: #646970;
+	font-size: 11px;
+}
+
+.onewebp-savings-positive {
+	color: #008080;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.onewebp-savings-negative {
+	color: #d63638;
+	font-weight: bold;
+	font-size: 11px;
+}
+
+.onewebp-webp-link {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.onewebp-unsupported {
+	color: #999;
+	font-style: italic;
+}
+
+.onewebp-action-remove {
+	color: #d63638;
+}
+
+/* -------------------------------------------------------------------------
+ * Native WebP and pending status labels
+ * ---------------------------------------------------------------------- */
+.onewebp-native-webp {
+	display: inline-block;
+	padding: 2px 8px;
+	background: #e6f4ea;
+	color: #1e7e34;
+	border: 1px solid #b7e1c1;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+.onewebp-pending {
+	display: inline-block;
+	padding: 2px 8px;
+	background: #fff8e5;
+	color: #b26a00;
+	border: 1px solid #f5d78e;
+	border-radius: 3px;
+	font-size: 11px;
+	font-weight: 600;
+	white-space: nowrap;
+}
+
+/* -------------------------------------------------------------------------
+ * Responsive
+ * ---------------------------------------------------------------------- */
+@media screen and (max-width: 782px) {
+	.onewebp-report-box {
+		min-width: 100px;
+		padding: 15px 5px;
+	}
+
+	.onewebp-report-num {
+		font-size: 24px;
+	}
+
+	.onewebp-mode-comparison {
+		font-size: 11px;
+	}
+}
